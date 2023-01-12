@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2> Shikusi Dispensary </h2>
+<script>
+    function validateForm() {
+        
+            window.location.href = "form.html";
+        
+    }
+    function callTriage() {
+        
+        window.location.href = "triage.html";
+    
+}
+</script>
+    <form method="get" action="form.html" onsubmit="return validateForm()">
+        <input type="submit" value="Registration">
+    </form>
+
+    <form method="get" action="triage.html" onsubmit="return callTriage()">
+        <input type="submit" value="Triage">
+    </form>
+ 
+</body>
+</html>

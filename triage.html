@@ -1,0 +1,264 @@
+<script src="https://cdn03.jotfor.ms/static/prototype.forms.js?3.3.38610" type="text/javascript"></script>
+<script src="https://cdn01.jotfor.ms/static/jotform.forms.js?3.3.38610" type="text/javascript"></script>
+<script type="text/javascript">	JotForm.newDefaultTheme = false;
+	JotForm.extendsNewTheme = false;
+	JotForm.singleProduct = false;
+	JotForm.newPaymentUIForNewCreatedForms = true;
+	JotForm.newPaymentUI = true;
+	JotForm.clearFieldOnHide="disable";
+	JotForm.submitError="jumpToFirstError";
+
+	JotForm.init(function(){
+	/*INIT-START*/
+
+ JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+ JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+ JotForm.calendarOther = {"today":"Today"};
+ var languageOptions = document.querySelectorAll('#langList li'); 
+ for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
+   languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("15", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); }, 0); });
+ } 
+ JotForm.onTranslationsFetch(function() { JotForm.setCalendar("15", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); });
+if (window.JotForm && JotForm.accessible) $('input_6').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_7').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_8').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_9').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_10').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_11').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_12').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_13').setAttribute('tabindex',0);
+      JotForm.alterTexts(undefined);
+	/*INIT-END*/
+	});
+
+   JotForm.prepareCalculationsOnTheFly([null,{"name":"heading","qid":"1","text":"Triage Form","type":"control_head"},null,null,null,null,{"description":"","name":"typeA6","qid":"6","subLabel":"","text":"temperature","type":"control_textbox"},{"description":"","name":"typeA7","qid":"7","subLabel":"","text":"pulse Rate","type":"control_textbox"},{"description":"","name":"typeA8","qid":"8","subLabel":"","text":"Blood Pressure","type":"control_textbox"},{"description":"","name":"typeA9","qid":"9","subLabel":"","text":"Respiratory Rate","type":"control_textbox"},{"description":"","name":"typeA10","qid":"10","subLabel":"","text":"Oxygen Saturation","type":"control_textbox"},{"description":"","name":"typeA11","qid":"11","subLabel":"","text":"Weight (kg)","type":"control_textbox"},{"description":"","name":"typeA12","qid":"12","subLabel":"","text":"Height  (cm)","type":"control_textbox"},{"description":"","name":"typeA13","qid":"13","subLabel":"","text":"BMI","type":"control_textbox"},{"name":"submit","qid":"14","text":"Submit","type":"control_button"},{"description":"","name":"date","qid":"15","text":"Date","type":"control_datetime"}]);
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"heading","qid":"1","text":"Triage Form","type":"control_head"},null,null,null,null,{"description":"","name":"typeA6","qid":"6","subLabel":"","text":"temperature","type":"control_textbox"},{"description":"","name":"typeA7","qid":"7","subLabel":"","text":"pulse Rate","type":"control_textbox"},{"description":"","name":"typeA8","qid":"8","subLabel":"","text":"Blood Pressure","type":"control_textbox"},{"description":"","name":"typeA9","qid":"9","subLabel":"","text":"Respiratory Rate","type":"control_textbox"},{"description":"","name":"typeA10","qid":"10","subLabel":"","text":"Oxygen Saturation","type":"control_textbox"},{"description":"","name":"typeA11","qid":"11","subLabel":"","text":"Weight (kg)","type":"control_textbox"},{"description":"","name":"typeA12","qid":"12","subLabel":"","text":"Height  (cm)","type":"control_textbox"},{"description":"","name":"typeA13","qid":"13","subLabel":"","text":"BMI","type":"control_textbox"},{"name":"submit","qid":"14","text":"Submit","type":"control_button"},{"description":"","name":"date","qid":"15","text":"Date","type":"control_datetime"}]);}, 20); 
+</script>
+<link href="https://cdn01.jotfor.ms/static/formCss.css?3.3.38610" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/nova.css?3.3.38610" />
+<style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/themes/CSS/54b929a4700cc4f2408b4567.css?themeRevisionID=60eb6ecddb71c14295405e83"/>
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/css/styles/payment/payment_styles.css?3.3.38610" />
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_feature.css?3.3.38610" />
+<style type="text/css">
+@import 'https://shots.jotform.com/elton/genericTheme.css';
+
+    .form-label-left{
+        width:150px;
+    }
+    .form-line{
+        padding-top:12px;
+        padding-bottom:12px;
+    }
+    .form-label-right{
+        width:150px;
+    }
+    .form-all{
+        width:700px;
+        color:#3E4E1A !important;
+        font-family:'Didact Gothic';
+        font-size:18px;
+    }
+</style>
+
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+/*PREFERENCES STYLE*/
+    .form-all {
+      font-family: Didact Gothic, sans-serif;
+    }
+    .form-all .qq-upload-button,
+    .form-all .form-submit-button,
+    .form-all .form-submit-reset,
+    .form-all .form-submit-print {
+      font-family: Didact Gothic, sans-serif;
+    }
+    .form-all .form-pagebreak-back-container,
+    .form-all .form-pagebreak-next-container {
+      font-family: Didact Gothic, sans-serif;
+    }
+    .form-header-group {
+      font-family: Didact Gothic, sans-serif;
+    }
+    .form-label {
+      font-family: Didact Gothic, sans-serif;
+    }
+  
+    .form-label.form-label-auto {
+      
+    display: inline-block;
+    float: left;
+    text-align: left;
+  
+    }
+  
+    .form-line {
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+  
+    .form-all {
+      max-width: 700px;
+      width: 100%;
+    }
+  
+    .form-label.form-label-left,
+    .form-label.form-label-right,
+    .form-label.form-label-left.form-label-auto,
+    .form-label.form-label-right.form-label-auto {
+      width: 150px;
+    }
+  
+    .form-all {
+      font-size: 18px
+    }
+    .form-all .qq-upload-button,
+    .form-all .qq-upload-button,
+    .form-all .form-submit-button,
+    .form-all .form-submit-reset,
+    .form-all .form-submit-print {
+      font-size: 18px
+    }
+    .form-all .form-pagebreak-back-container,
+    .form-all .form-pagebreak-next-container {
+      font-size: 18px
+    }
+  
+    .supernova .form-all, .form-all {
+      background-color: #F9F2E7;
+    }
+  
+    .form-all {
+      color: #3E4E1A;
+    }
+    .form-header-group .form-header {
+      color: rgb(255, 255, 255);
+    }
+    .form-header-group .form-subHeader {
+      color: #3E4E1A;
+    }
+    .form-label-top,
+    .form-label-left,
+    .form-label-right,
+    .form-html,
+    .form-checkbox-item label,
+    .form-radio-item label,
+    span.FITB .qb-checkbox-label,
+    span.FITB .qb-radiobox-label,
+    span.FITB .form-radio label,
+    span.FITB .form-checkbox label,
+    [data-blotid][data-type=checkbox] [data-labelid],
+    [data-blotid][data-type=radiobox] [data-labelid],
+    span.FITB-inptCont[data-type=checkbox] label,
+    span.FITB-inptCont[data-type=radiobox] label {
+      color: #3E4E1A;
+    }
+    .form-sub-label {
+      color: #586834;
+    }
+  
+    .supernova {
+      background-color: #8FBDFD;
+    }
+    .supernova body {
+      background: transparent;
+    }
+  
+    .form-textbox,
+    .form-textarea,
+    .form-dropdown,
+    .form-radio-other-input,
+    .form-checkbox-other-input,
+    .form-captcha input,
+    .form-spinner input {
+      background-color: #fff;
+    }
+  
+      .supernova {
+        height: 100%;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-position: center top;
+      }
+      .supernova {
+        background-image: url("https://shots.jotform.com/elton/pattern/pattern-eo2z.png");
+      }
+      #stage {
+        background-image: url("https://shots.jotform.com/elton/pattern/pattern-eo2z.png");
+      }
+    
+    .form-all {
+      background-image: none;
+    }
+  
+  .ie-8 .form-all:before { display: none; }
+  .ie-8 {
+    margin-top: auto;
+    margin-top: initial;
+  }
+  
+  /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
+    /* Injected CSS Code */
+</style>
+
+<form class="jotform-form" action="https://submit.jotform.com/submit/230101750811036/" method="post" name="form_230101750811036" id="230101750811036" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="230101750811036" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    <ul class="form-section page-section">
+      <li id="cid_1" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-large">
+          <div class="header-text httac htvam">
+            <h1 id="header_1" class="form-header" data-component="header">Triage Form</h1>
+            <div id="subHeader_1" class="form-subHeader">Please Input All Data</div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_datetime" id="id_15"><label class="form-label form-label-left form-label-auto" id="label_15" for="lite_mode_15"> Date </label>
+        <div id="cid_15" class="form-input">
+          <div data-wrapper-react="true">
+            <div style="display:none"><span class="form-sub-label-container" style="vertical-align:top"><input type="tel" class="form-textbox validate[limitDate]" id="month_15" name="q15_date[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="section-input_15 off" aria-labelledby="label_15 sublabel_15_month" /><span class="date-separate" aria-hidden="true"> -</span><label class="form-sub-label" for="month_15" id="sublabel_15_month" style="min-height:13px" aria-hidden="false">Month</label></span><span class="form-sub-label-container" style="vertical-align:top"><input type="tel" class="form-textbox validate[limitDate]" id="day_15" name="q15_date[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="section-input_15 off" aria-labelledby="label_15 sublabel_15_day" /><span class="date-separate" aria-hidden="true"> -</span><label class="form-sub-label" for="day_15" id="sublabel_15_day" style="min-height:13px" aria-hidden="false">Day</label></span><span class="form-sub-label-container" style="vertical-align:top"><input type="tel" class="form-textbox validate[limitDate]" id="year_15" name="q15_date[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="" autoComplete="section-input_15 off" aria-labelledby="label_15 sublabel_15_year" /> <label class="form-sub-label" for="year_15" id="sublabel_15_year" style="min-height:13px" aria-hidden="false">Year</label></span></div><span class="form-sub-label-container" style="vertical-align:top"><input type="text" class="form-textbox validate[limitDate, validateLiteDate]" id="lite_mode_15" size="12" data-maxlength="12" maxLength="12" data-age="" value="" data-format="mmddyyyy" data-seperator="-" placeholder="mm-dd-yyyy" autoComplete="section-input_15 off" aria-labelledby="label_15 sublabel_15_litemode" /><img class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_15_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="No" data-version="v1" /> <label class="form-sub-label" for="lite_mode_15" id="sublabel_15_litemode" style="min-height:13px" aria-hidden="false">Date</label></span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_6"><label class="form-label form-label-left form-label-auto" id="label_6" for="input_6"> temperature </label>
+        <div id="cid_6" class="form-input"> <input type="text" id="input_6" name="q6_typeA6" data-type="input-textbox" class="form-textbox" data-defaultvalue="" size="20" value="" data-component="textbox" aria-labelledby="label_6" /> </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_7"><label class="form-label form-label-left form-label-auto" id="label_7" for="input_7"> pulse Rate </label>
+        <div id="cid_7" class="form-input"> <input type="text" id="input_7" name="q7_typeA7" data-type="input-textbox" class="form-textbox" data-defaultvalue="" size="20" value="" data-component="textbox" aria-labelledby="label_7" /> </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_8"><label class="form-label form-label-left form-label-auto" id="label_8" for="input_8"> Blood Pressure </label>
+        <div id="cid_8" class="form-input"> <input type="text" id="input_8" name="q8_typeA8" data-type="input-textbox" class="form-textbox" data-defaultvalue="" size="20" value="" data-component="textbox" aria-labelledby="label_8" /> </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_9"><label class="form-label form-label-left form-label-auto" id="label_9" for="input_9"> Respiratory Rate </label>
+        <div id="cid_9" class="form-input"> <input type="text" id="input_9" name="q9_typeA9" data-type="input-textbox" class="form-textbox" data-defaultvalue="" size="20" value="" data-component="textbox" aria-labelledby="label_9" /> </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_10"><label class="form-label form-label-left form-label-auto" id="label_10" for="input_10"> Oxygen Saturation </label>
+        <div id="cid_10" class="form-input"> <input type="text" id="input_10" name="q10_typeA10" data-type="input-textbox" class="form-textbox" data-defaultvalue="" size="20" value="" data-component="textbox" aria-labelledby="label_10" /> </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_11"><label class="form-label form-label-left form-label-auto" id="label_11" for="input_11"> Weight (kg) </label>
+        <div id="cid_11" class="form-input"> <input type="text" id="input_11" name="q11_typeA11" data-type="input-textbox" class="form-textbox" data-defaultvalue="" size="20" value="" data-component="textbox" aria-labelledby="label_11" /> </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_12"><label class="form-label form-label-left form-label-auto" id="label_12" for="input_12"> Height (cm) </label>
+        <div id="cid_12" class="form-input"> <input type="text" id="input_12" name="q12_typeA12" data-type="input-textbox" class="form-textbox" data-defaultvalue="" size="20" value="" data-component="textbox" aria-labelledby="label_12" /> </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_13"><label class="form-label form-label-left form-label-auto" id="label_13" for="input_13"> BMI </label>
+        <div id="cid_13" class="form-input"> <input type="text" id="input_13" name="q13_typeA13" data-type="input-textbox" class="form-textbox" data-defaultvalue="" size="20" value="" data-component="textbox" aria-labelledby="label_13" /> </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_14">
+        <div id="cid_14" class="form-input-wide">
+          <div data-align="center" class="form-buttons-wrapper form-buttons-center   jsTest-button-wrapperField"><button id="input_14" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">Submit</button></div>
+        </div>
+      </li>
+      <li style="display:none">Should be Empty: <input type="text" name="website" value="" /></li>
+    </ul>
+  </div>
+  <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="230101750811036" />
+  <script type="text/javascript">
+    var all_spc = document.querySelectorAll("form[id='230101750811036'] .si" + "mple" + "_spc");
+    for (var i = 0; i < all_spc.length; i++)
+    {
+      all_spc[i].value = "230101750811036-230101750811036";
+    }
+  </script>
+  
+</form>
